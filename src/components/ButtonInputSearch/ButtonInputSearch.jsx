@@ -10,6 +10,7 @@ const ButtonInputSearch = (props) => {
             <InputComponents
                 size={size}
                 placeholder={placeholder}
+                {...props}
             />
             <Button size={size}
                 icon={<SearchOutlined />}

@@ -1,13 +1,16 @@
 import { Input } from 'antd'
 import React from 'react'
 
-const InputComponents = (size, placeholder,...rest ) => {
+const InputComponent = ({size, placeholder, bordered, style, ...rests }) => {
   return (
-    <Input
-     size={size} 
-     placeholder='Input search text'
-      />
+    <Input 
+        size={size} 
+        placeholder={placeholder} 
+        bordered={bordered} 
+        style={style}
+        {...rests} 
+    />
   )
 }
 
-export default InputComponents
+export default InputComponent

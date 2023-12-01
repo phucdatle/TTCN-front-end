@@ -11,7 +11,7 @@ import styled from "styled-components";
 
 export const WrapperHeader = styled(Row)`
     padding: 10px 120px;
-    background-color: #fff ;
+    background-color: rgb(38,51,66);
     align-items: center;
     gap: 16px;
     border-bottom: 1px solid black;
@@ -22,12 +22,21 @@ export const WrapperHeader = styled(Row)`
 export const WrapperHeaderAccout = styled.div`
   	display: flex;
 	align-items: center;
-    color: black;
+    color: #FFFFFF;
     gap: 10px;
 
 `
 export const WrapperTextHeaderSmall = styled.span`
     fontSize: 15px;
-    color:black;
+    color: #FFFFFF;
     while-space: nowrap;
+`
+
+export const WrapperContentPopup = styled.p`
+    cursor: pointer;
+    &:hover{
+        background: #FFFFFF;
+        border-radius: 4px;
+
+    }
 `
